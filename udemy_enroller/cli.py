@@ -146,7 +146,7 @@ def parse_args() -> Namespace:
     parser.add_argument(
         "--max-pages",
         type=int,
-        default=5,
+        default=500,
         help=f"Max pages to scrape from sites (if pagination exists) (Default is 5)",
     )
 
