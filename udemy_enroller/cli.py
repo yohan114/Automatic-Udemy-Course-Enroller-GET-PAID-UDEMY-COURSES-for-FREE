@@ -61,7 +61,7 @@ def run(
     tutorialbar_enabled: bool,
     discudemy_enabled: bool,
     coursevania_enabled: bool,
-    max_pages: Union[int, None],
+    max_pages: Union[int],
     delete_settings: bool,
     delete_cookie: bool,
 ):
@@ -146,8 +146,8 @@ def parse_args() -> Namespace:
     parser.add_argument(
         "--max-pages",
         type=int,
-        default=500,
-        help=f"Max pages to scrape from sites (if pagination exists) (Default is 5)",
+        default=300,
+        help=f"Max pages to scrape from sites (if pagination exists) (Default is 300)",
     )
 
     parser.add_argument(
